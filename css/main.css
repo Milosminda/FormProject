@@ -101,6 +101,9 @@ input[type=submit]:hover {
   .row {
   	padding-bottom: 10px;
   }
+  body {
+  	zoom: 1;
+  }
 }
 /**********************************
            Helper classes
