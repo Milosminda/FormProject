@@ -1,0 +1,115 @@
+/**********************************
+           Global styles
+***********************************/
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #333;
+	font-family: Tahoma, sans-serif;
+	margin: 0;
+	background-color: #4dd2ff;
+}
+/**********************************
+              Layout
+***********************************/
+.container, header {
+	width: 80%;
+	margin: 0 auto;
+}
+.container {
+	background-color: #f2f2f2;
+}
+.col-25 {
+	width: 40%;
+	float: left;
+	text-align: right;
+	padding-right: 20px;
+}
+.col-75 {
+	width: 60%;
+	float: left;
+}
+/**********************************
+          Specific styles
+***********************************/
+header {
+	text-align: center;
+}
+.main-form {
+	padding: 15px;
+}
+.main-form h2 {
+	text-align: center;
+}
+input[type=text], input[type=number], input[type=email] {
+	min-width: 40%;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	resize: vertical;
+	margin-left: 10px;
+}
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.sel-resp {
+	padding-left: 12px;
+}
+.rad-resp {
+	padding-left: 10px;
+}
+.row {
+	border-bottom: 1px solid #ccc;
+	margin: 7px 0;
+}
+.row:last-child {
+	border-bottom: none;
+}
+/**********************************
+			Media Queries
+***********************************/
+@media all and (max-width: 768px) {
+	.col-25, .col-75 {
+		width: 100%;
+		text-align: left;
+	}
+	input[type=submit] {
+		width: 100%;
+  }
+  input[type=text], input[type=number], input[type=email] {
+	width: 100%;
+  }
+  .row {
+  	padding-bottom: 10px;
+  }
+}
+/**********************************
+           Helper classes
+***********************************/
+.clearfix::before,
+.clearfix::after {
+	content: " ";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
